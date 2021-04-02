@@ -6,7 +6,7 @@
 </template>
 
 <script lang="ts">
-import { Options, Vue } from 'vue-class-component';
+import { Options, Vue, Watch } from 'vue-property-decorator'
 import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
 
 @Options({
@@ -14,5 +14,9 @@ import HelloWorld from '@/components/HelloWorld.vue'; // @ is an alias to /src
     HelloWorld,
   },
 })
-export default class Home extends Vue {}
+export default class Home extends Vue {
+  // @Watch('watchValue')
+  // onChangeWatchValue(val: boolean) {
+  // }
+}
 </script>

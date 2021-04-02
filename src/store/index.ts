@@ -1,6 +1,9 @@
 import { createStore } from 'vuex'
 
-export default createStore({
+// NOTE: 参考にした
+// https://github.com/Armour/vue-typescript-admin-template/tree/master/src/store
+
+const store = createStore({
   state: {
   },
   mutations: {
@@ -10,3 +13,5 @@ export default createStore({
   modules: {
   }
 })
+
+export default store
